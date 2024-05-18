@@ -1,4 +1,4 @@
-import random as rand
+import random, sys
 print("Check How random the \"random\" module really is.")
 while True:
     try:
@@ -11,13 +11,12 @@ while True:
         for i in range(1,upper+1):
             probability[i] = 0
         for i in range(1,upper+1):
-            number = rand.randint(1,upper)
+            number = random.randint(1,upper)
             probability[number] = probability[number] + 1
         print(probability)
-        user_choice = input("Enter \"exit\" to exit: ")
+        user_choice = input("Enter \"exit\" to exit or press enter to continue : ")
         if user_choice == "exit":
-            break    
+            sys.exit()    
     else:
         print("Number should be > 1")
         pass
-print("Thanks")
