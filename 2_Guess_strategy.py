@@ -1,3 +1,4 @@
+#! python3
 import random
 
 # Main Comment 1 : Defining the strategies (brute force, lucky guess, odd-even run) , user input for guess and function that generates number and runs the strategies
